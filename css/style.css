@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+}
+*{
+   font-family: 'Raleway', Arial, sans-serif; 
+}
+
+.menu {
+    font-family: 'Raleway', Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0;
+}
+
+.menu * {
+    box-sizing: border-box;
+}
+
+.menu li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 1.5em;
+    padding: 0;
+}
+
+.menu a {
+    padding: 0.5em 0;
+    color: black;
+    position: relative;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.menu a:before,
+.menu a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.menu a:before {
+    bottom: 0;
+    display: block;
+    height: 3px;
+    width: 0%;
+    content: "";
+    background-color: black;
+}
+
+.menu a:after {
+    left: 0;
+    top: 0;
+    padding: 0.5em 0;
+    position: absolute;
+    content: attr(data-hover);
+    color: black;
+    white-space: nowrap;
+    max-width: 0%;
+    overflow: hidden;
+}
+
+.menu a:hover:before,
+.menu .current a:before {
+    opacity: 1;
+    width: 100%;
+}
+
+.menu a:hover:after,
+.menu .current a:after {
+    max-width: 100%;
+}
+
+/* Demo purposes only */
+
+/* Mit eget css starter */
+
+body {
+    padding: 50px 0;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.aarhusview {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.artikler {
+    text-align: center;
+    margin: 0 300px;
+    line-height: 1.5;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.billeder {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.resume {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 20px 0 35px 0;
+}
+
+.h1 {
+    margin: 40px 0 10px 0;
+}
+
+.tekst {
+    font-size: 1.1em;
+}
+
+.information {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 0 300px;
+    text-align: center;
+}
+
+/*Mit eget css slutter */
+
+figure.snip1383 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 230px;
+    max-width: 315px;
+    max-height: 220px;
+    width: 100%;
+    color: black;
+    text-align: left;
+    background-color: #35609c;
+    font-size: 16px;
+}
+
+figure.snip1383 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+figure.snip1383 img {
+    max-width: 100%;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+    backface-visibility: hidden;
+}
+
+figure.snip1383 figcaption {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    -webkit-transform: scale(0.5) translate(0%, -50%);
+    transform: scale(0.5) translate(0%, -50%);
+    -webkit-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    z-index: 1;
+    opacity: 0;
+    padding: 0 30px;
+}
+
+figure.snip1383 h3,
+figure.snip1383 p {
+    line-height: 1.5em;
+}
+
+figure.snip1383 h3 {
+    margin: 0;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+figure.snip1383 p {
+    font-size: 0.8em;
+    font-weight: 500;
+    margin: 0 0 15px;
+}
+
+figure.snip1383 .read-more {
+    border: 2px solid #ffffff;
+    padding: 0.5em 1em;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+figure.snip1383 .read-more:hover {
+    background-color: white;
+    color: #000000;
+}
+
+figure.snip1383:hover img,
+figure.snip1383.hover img {
+    -webkit-animation: snip1383 0.45s linear forwards;
+    animation: snip1383 0.45s linear forwards;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+figure.snip1383:hover figcaption,
+figure.snip1383.hover figcaption {
+    -webkit-transform: scale(1) translate(0, -50%);
+    transform: scale(1) translate(0, -50%);
+    opacity: 1;
+    -webkit-transition-delay: 0.35s;
+    transition-delay: 0.35s;
+}
+
+@keyframes snip1383 {
+    50% {
+        -webkit-transform: scale(0.8) translateY(0%);
+        transform: scale(0.8) translateY(0%);
+        opacity: 0.5;
+    }
+    100% {
+        -webkit-transform: scale(0.8) translateY(150%);
+        transform: scale(0.8) translateY(150%);
+        opacity: 0.5;
+    }
+}
+
+/* Mit eget css */
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Mit eget css slutter */
+
+/* Demo purposes only */
+
+.footer {
+    background-color: #35609c;
+    box-shadow: 0 5px 5px 0;
+    box-sizing: border-box;
+    width: 100%;
+    font: bold 16px sans-serif;
+    text-align: center;
+}
+
+/* Footer menu */
+.footer-menu a {
+    line-height: 1.8;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.footer-magasin-navn {
+    color: #000000;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footerlogo {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: cornsilk;
+}
