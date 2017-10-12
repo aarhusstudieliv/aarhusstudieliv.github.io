@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+/* Style */ 
+
+}
 *{
    font-family: 'Raleway', Arial, sans-serif; 
 }
@@ -281,3 +284,56 @@ figure.snip1383.hover figcaption {
 body {
     background-color: cornsilk;
 }
+
+@media screen and (max-width: 640px){
+    .menu{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+    }
+    .logo{
+        width:100%
+    }
+    .footerlogo{
+        width:100%;
+    }
+    .aarhusview{
+        width:90%;
+        margin-bottom:20px;
+    }
+    figure.snip1383{
+        display:none;
+    }
+    .menu li{
+        margin:7px;
+    }
+    .artikler{
+        width:100%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    h1{
+        font-size:1.3em;
+    }
+    .resume{
+        font-size:1.1em;
+    }
+    .underoverskrift{
+        font-size:1.0em;
+        margin-top:25px;
+    }
+    .tekst{
+        font-size:0.9em;
+    }
+    .footer-menu a{
+        display:flex;
+        flex-direction:column;
+    }
+    .menu a:before{
+        display:inline-flex;
+    }
+    .information{
+        margin-left:auto;
+        margin-right:auto;
+    }
+    }
